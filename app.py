@@ -17,7 +17,7 @@ plt.ioff()
 # ✅ 加载模型和 scaler
 @st.cache_resource
 def load_model_scaler():
-    model = joblib.load(r"D:\ST\web\web\static\best_model_LightGBM.joblib")
+    model = joblib.load("static\best_model_LightGBM.joblib")
     # scaler = joblib.load("static/scaler.joblib")
     # scaler = joblib.load(r"D:\ST\web\web\static\standard_scaler.joblib")
     # return model, scaler
@@ -26,7 +26,7 @@ def load_model_scaler():
 # ✅ 加载训练数据用于 TreeExplainer
 @st.cache_data
 def load_background_data():
-    df = pd.read_excel(r"D:\ST\web\web\static\L34v9re12.xlsx", sheet_name='Sheet1').dropna()
+    df = pd.read_excel("static\L34v9re12.xlsx", sheet_name='Sheet1').dropna()
     features = ['L3-4 pfirrmann grade', 'L3-4 spinal canal stenosis', 'L3-4 modic change',
                 'L3-4 osteoarthritis of facet joints', 'L3-4 sagittal imbalance', 'L3-4 foraminal stenosis',
                 'L3-4 EBQ', 'L3-4 local lordosis angle', 'L3-4 preoperative disc height']
