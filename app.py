@@ -19,7 +19,7 @@ plt.ioff()
 def load_model_scaler():
     model = joblib.load("static/best_model_XGBoost.joblib")
     # scaler = joblib.load("static/scaler.joblib")
-    # scaler = joblib.load(r"D:\ST\web\web\static\standard_scaler.joblib")
+    # scaler = joblib.load("static/standard_scaler.joblib")
     # return model, scaler
     return model
 
