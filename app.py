@@ -98,7 +98,7 @@ def main():
         print(proba)
         label = np.array([(proba >= 0.21).astype(int)])
 
-        st.success(f"Base on feature values,predicted possibility of adjacent segment degeneration is {round(proba * 100, 2)}%.")
+        st.success(f"Base on feature values, predicted possibility of adjacent segment degeneration is {proba * 100:.2f}%.")
 
         # st.markdown(
         #     f"<h4 style='text-align: center;'>Base on feature values,predicted possibility of adjacent segment degeneration is {round(proba * 100, 2)}%.</h4>",
