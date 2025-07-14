@@ -4,3 +4,4 @@ matplotlib==3.10.0
 ipython==9.1.0
 lightgbm==4.6.0
 openpyxl==3.1.5
+xgboost==2.1.1
